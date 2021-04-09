@@ -12,8 +12,8 @@
 #define pin_ir_trasero 4
 #define pin_trigger 5
 #define pin_echo 6
-#define pin_rueda_izquierda 9
-#define pin_rueda_derecha 10
+#define pin_rueda_derecha 9
+#define pin_rueda_izquierda 10
 
 Servo rueda;
 
@@ -107,7 +107,7 @@ int muestraMenu() {
 
 void secuencia_inicio()
 {
-  Serial.println("Secuencia Inicio");
+  //Serial.println("Secuencia Inicio");
   for (int i = 0; i < 5; i++) {
     digitalWrite(pin_buzzer, HIGH);
     delay(50);
